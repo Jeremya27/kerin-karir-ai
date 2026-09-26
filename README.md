@@ -81,6 +81,17 @@ streamlit run app.py
 ```
 Aplikasi akan terbuka di `http://localhost:8501`.
 
+☁️ Deploy
+
+Aplikasi ini sudah di-deploy publik lewat Streamlit Community Cloud di https://kerin-karir-ai.streamlit.app/ (lihat bagian "Demo Langsung" di atas).
+
+Kalau ingin deploy ulang/fork sendiri:
+1. Push repo ini ke GitHub (lihat langkah di bawah).
+2. Buka share.streamlit.io → New app → pilih repo & branch → app.py sebagai entry point.
+3. Setelah aplikasi online, setiap pengunjung tetap menempelkan API key Gemini miliknya sendiri di kotak sidebar — tidak perlu diatur di menu Secrets, karena aplikasi ini  
+   memang didesain agar key selalu diinput lewat UI, bukan dari sisi server.
+
+
 ## ⚠️ Catatan
 
 - API pencarian lowongan (Arbeitnow) adalah API publik gratis tanpa API key,
