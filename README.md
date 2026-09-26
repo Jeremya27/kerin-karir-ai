@@ -81,46 +81,11 @@ streamlit run app.py
 ```
 Aplikasi akan terbuka di `http://localhost:8501`.
 
-## 📸 Screenshot UI
-
-> Tambahkan screenshot tampilan chatbot kamu di sini setelah dijalankan
-> (contoh: `screenshots/chat.png`), lalu sertakan di README dan submission.
-
-```markdown
-![Kerin Chat UI](screenshots/chat.png)
-```
-
-Kotak API key bertipe *password* (tampil sebagai titik-titik, bukan teks
-asli), jadi screenshot sidebar kamu tetap aman dibagikan meskipun sudah diisi.
-
-## ☁️ Deploy (opsional)
-
-Untuk deploy publik gratis, gunakan [Streamlit Community Cloud](https://streamlit.io/cloud):
-1. Push repo ini ke GitHub (lihat langkah di bawah).
-2. Buka share.streamlit.io → New app → pilih repo & branch → `app.py` sebagai entry point.
-3. Setelah aplikasi online, setiap pengunjung tetap menempelkan API key
-   Gemini miliknya sendiri di kotak sidebar — tidak perlu diatur di menu
-   Secrets, karena aplikasi ini memang didesain agar key selalu diinput
-   lewat UI, bukan dari sisi server.
-
-## 📤 Push ke GitHub
-
-```bash
-git init
-git add .
-git commit -m "Final project: Kerin - Asisten Karir AI dengan Gemini API"
-git branch -M main
-git remote add origin https://github.com/<username-kamu>/kerin-karir-ai.git
-git push -u origin main
-```
-
 ## ⚠️ Catatan
 
 - API pencarian lowongan (Arbeitnow) adalah API publik gratis tanpa API key,
   namun data listing-nya sebagian besar berfokus pada lowongan remote/tech
   Eropa — cocok untuk keperluan demo, bukan sumber data lowongan Indonesia resmi.
-- Jangan commit file `user_memory.json` ke repository publik (berisi profil
-  pengguna; sudah otomatis diabaikan lewat `.gitignore`).
 - Model default: `gemini-3.5-flash-lite` — dipilih karena kuota gratis
   hariannya jauh lebih besar (~500 request/hari) dibanding Flash biasa
   (~20 request/hari per September 2026), sementara *function calling* tetap
