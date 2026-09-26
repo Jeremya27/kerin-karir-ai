@@ -81,9 +81,11 @@ streamlit run app.py
 ```
 Aplikasi akan terbuka di `http://localhost:8501`.
 
+
+
 ☁️ Deploy
 
-Aplikasi ini sudah di-deploy publik lewat Streamlit Community Cloud di https://kerin-karir-ai.streamlit.app/ (lihat bagian "Demo Langsung" di atas).
+Aplikasi ini sudah di-deploy publik lewat Streamlit Community Cloud di https://kerin-karir-ai.streamlit.app/ 
 
 Kalau ingin deploy ulang/fork sendiri:
 1. Push repo ini ke GitHub (lihat langkah di bawah).
